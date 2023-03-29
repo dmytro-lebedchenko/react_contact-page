@@ -18,7 +18,7 @@
   - BEM
 
 # Project task
-Create a responsive landing page according to the [layout](https://www.figma.com/file/YWgn9ZWsn61zuOZSC6Cffj/React-Technical-Assessment?node-id=1-680&t=Jn4oMJ0J3x6F9qnU-0)
+Create a responsive landing page according to the [layout](https://www.figma.com/file/AduHzjDNfSilkwXJWf5iq0/React-Technical-Assessment?node-id=1-681&t=O8RPa6wB5WAfe53C-0)
 
 # Project structure
 ## Contact page
