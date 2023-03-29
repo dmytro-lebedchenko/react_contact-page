@@ -31,7 +31,7 @@ export const ContactPage: React.FC = () => {
       className={
         classNames(
           'page',
-          { 'page--with-menu': isMenu && width < 640 },
+          { 'page--with-menu': isMenu && width < 1024 },
         )
       }
     >
