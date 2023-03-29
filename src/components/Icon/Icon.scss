@@ -1,0 +1,80 @@
+@import "../../styles/main.scss";
+
+.icon {
+  @include squareSize(18px);
+
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__arrow-up {
+    background-image: url(../../images/icons/arrow-up.svg);
+
+    &--hover {
+      background-image: url(../../images/icons/arrow-up-hover.svg);
+    }
+  }
+
+  &__arrow-down {
+    background-image: url(../../images/icons/arrow-down.svg);
+
+    &--hover {
+      background-image: url(../../images/icons/arrow-down-hover.svg);
+    }
+  }
+
+  &__cart {
+    background-image: url(../../images/icons/cart.svg);
+
+    &--hover {
+      background-image: url(../../images/icons/cart-hover.svg);
+    }
+  }
+
+  &__close {
+    background-image: url(../../images/icons/close.svg);
+  }
+
+  &__geo-point {
+    height: 21px;
+    background-image: url(../../images/icons/geo-point.svg);
+  }
+
+  &__instagram {
+    background-image: url(../../images/icons/instagram.svg);
+  }
+
+  &__mail {
+    width: 20px;
+    height: 16px;
+    background-image: url(../../images/icons/mail.svg);
+  }
+
+  &__menu {
+    background-image: url(../../images/icons/menu.svg);
+  }
+
+  &__phone {
+    background-image: url(../../images/icons/phone.svg);
+  }
+
+  &__social {
+    background-image: url(../../images/icons/social.svg);
+  }
+
+  &__tick {
+    background-image: url(../../images/icons/tick.svg);
+  }
+
+  &__twitter {
+    background-image: url(../../images/icons/twitter.svg);
+  }
+
+  &__user {
+    background-image: url(../../images/icons/user.svg);
+
+    &--hover {
+      background-image: url(../../images/icons/user-hover.svg);
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../styles/main.scss";
+
+.header {
+  margin-bottom: 34px;
+
+  &__top-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 20px;
+  
+    @include onDesktop {
+      padding: 40px 100px;
+    }
+  }
+
+  &__menu {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      transform: rotateX(360deg);
+      cursor: pointer;
+    }
+  }
+}
+
+.nav {
+  display: none;
+
+  @include onDesktop {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+  }
+
+  &__link {
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+
+    font-family: $font-family-menu;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #1f1f1f;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $color-primary;
+      cursor: pointer;
+    }
+
+    &--active {
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__icon-wrapper {
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    padding: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover .nav__icon--user {
+      background-image: url(../../images/icons/user-hover.svg);
+    }
+
+    &:hover .nav__icon--cart {
+      background-image: url(../../images/icons/cart-hover.svg);
+    }
+  }
+}

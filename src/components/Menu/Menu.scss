@@ -1,0 +1,119 @@
+@import "../../styles/main.scss";
+
+.menu {
+  &__content {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 30px 20px;
+    background-color: $color-primary;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+
+    font-family: $font-family-menu;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $color-white;
+    transition: border-color 0.5s;
+
+    &--selector {
+      margin-bottom: 30px;
+      padding-bottom: 2px;
+
+      font-family: $font-family-menu;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+      color: $color-white;
+
+      outline: none;
+      border: none;
+      translate: 0;
+      cursor: pointer;
+
+      @include onTablet {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      border-color: $color-white;
+    }
+
+    &--active {
+      font-weight: 700;
+      color: $color-white;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+  }
+
+  &__icon-wrapper {
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    padding: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-white;
+      box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+    }
+
+    &:hover .menu__icon--user {
+      background-image: url(../../images/icons/user.svg);
+    }
+
+    &:hover .menu__icon--cart {
+      background-image: url(../../images/icons/cart.svg);
+    }
+  }
+}
+
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+
+  &__icon {
+    @include squareSize(16px);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      transform: rotateY(360deg);
+      cursor: pointer;
+    }
+  }
+}

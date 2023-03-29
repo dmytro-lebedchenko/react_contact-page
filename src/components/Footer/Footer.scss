@@ -1,0 +1,247 @@
+@import "../../styles/main.scss";
+
+.footer {
+  background-color: $color-primary;
+
+  @include onDesktop {
+    min-height: 480px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px 35px 20px;
+
+    @include onDesktop {
+      padding: 80px 80px 0 80px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 30px 0 30px;
+
+    @include onDesktop {
+      flex-direction: row;
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid $color-white;
+
+    @include onDesktop {
+      padding-bottom: 45px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-white;
+
+    @include onDesktop {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__block-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    &--subscribe {
+      justify-content: center;
+    }
+  }
+}
+
+.contacts-list {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 19px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 24px;
+      gap: 28px;
+    }
+  }
+
+  &__item-text {
+    width: 288px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: start;
+    text-decoration: none;
+    color: $color-white;
+
+    @include onDesktop {
+      text-align: start;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  gap: 60px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-white;
+    text-decoration: none;
+
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $color-white;
+    }
+
+    @include onTablet {
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.subscribe {
+  height: min-content;
+  width: 100%;
+  max-width: max-content;
+  padding: 14px 14px 21px;
+
+  background-color: #131313;
+  border-radius: 10px;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #161616;
+  }
+
+  @include onDesktop {
+    max-width: 304px;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-white;
+
+    @include onDesktop {
+      margin-bottom: 29px;
+      font-size: 18px;
+    }
+  }
+
+  &__input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+
+    color: $color-white;
+    background-color: #1e1e1e;
+    border-radius: 4px 0 0 4px;
+    border: transparent;
+    outline: none;
+
+    font-family: $font-family-main;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+
+    &::placeholder {
+      color: #616161;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 22px;
+    height: 38px;
+    width: 105px;
+
+    background-color: $color-primary;
+    border: 3px solid transparent;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    font-family: $font-family-main;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
+    }
+    
+    &:active {
+      color: $color-primary;
+      border: 3px solid $color-secondary;
+      background-color: $color-white;
+    }
+  }
+
+  &__note {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: $color-white;
+    opacity: 0.5;
+  }
+}

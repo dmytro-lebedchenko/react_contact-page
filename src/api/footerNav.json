@@ -1,0 +1,48 @@
+{
+  "company": [
+    {
+      "title": "About",
+      "link": "/about"
+    },
+    {
+      "title": "Contacts",
+      "link": "/contacts"
+    },
+    {
+      "title": "Blogs",
+      "link": "/blogs"
+    }
+  ],
+  "legal": [
+    {
+      "title": "Privacy Policy",
+      "link": "/policy"
+    },
+    {
+      "title": "Terms & Services",
+      "link": "/terms-and-services"
+    },
+    {
+      "title": "Terms of Use",
+      "link": "/terms-of-use"
+    },
+    {
+      "title": "Refund Policy",
+      "link": "/refund-policy"
+    }
+  ],
+  "links": [
+    {
+      "title": "Techlabz Keybox",
+      "link": "/techlabz"
+    },
+    {
+      "title": "Downloads",
+      "link": "/downloads"
+    },
+    {
+      "title": "Forum",
+      "link": "/forum"
+    }
+  ]
+}

@@ -1,42 +1,34 @@
-# template-react-app
+# Contact Page App
 
+## [DEMO LINK](https://dmytro-lebedchenko.github.io/react_contact-page/#/)
 
-## How to use
+# Table of contents
+- [Tech stack](#tech-stack)
+- [Project task](#project-task)
+- [Project structure](#project-structure)
+- [How to run my project locally](#how-to-run-my-project-locally)
 
-1. Select and click "use this template"
+# Tech stack
+  - React.JS
+  - React Router
+  - JavaScript
+  - TypeScript
+  - HTML
+  - CSS/SCSS
+  - BEM
 
-2. Create new repo.
+# Project task
+Create a responsive landing page according to the [layout](https://www.figma.com/file/YWgn9ZWsn61zuOZSC6Cffj/React-Technical-Assessment?node-id=1-680&t=Jn4oMJ0J3x6F9qnU-0)
 
-3. Clone repo
+# Project structure
+## Contact page
+![Contact page](./readme/preview/contact-page.gif)
+![Contact page](./readme/preview/contact-page-responsive.gif)
 
-```bash
-  git clone https://link-to-project
-```
+## Not Found page
+![Not Found page](./readme/preview/not-found-page.gif)
 
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm start
-```
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
+# How to run my project locally:
+  - npm i
+  - npm start
+  - tab will be opened automatically in your browser

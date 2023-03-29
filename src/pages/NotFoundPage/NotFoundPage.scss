@@ -1,0 +1,27 @@
+@import "../../styles/main.scss";
+
+.not-found-page {
+  &__title {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    font-family: $font-family-main;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: $color-primary;
+    text-align: center;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 500px;
+    width: 90%;
+
+    background-image: url(../../images/not_found.gif);
+    background-position: center;
+  }
+}

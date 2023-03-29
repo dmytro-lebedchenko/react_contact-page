@@ -1,11 +1,4 @@
+import { Outlet } from 'react-router';
 import './App.scss';
 
-const App = () => {
-  return (
-    <div className="App">
-      Hello
-    </div>
-  );
-};
-
-export default App;
+export const App: React.FC = () => <Outlet />;

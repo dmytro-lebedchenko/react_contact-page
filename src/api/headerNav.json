@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "Features",
+    "link": "/features",
+    "options": [
+      {
+        "title": "Feature-item",
+        "link": "/feature-item-1"
+      },
+      {
+        "title": "Feature-item",
+        "link": "/feature-item-1"
+      },
+      {
+        "title": "Feature-item",
+        "link": "/feature-item-1"
+      }
+    ]
+  },
+  {
+    "title": "Blog",
+    "link": "/blog"
+  },
+  {
+    "title": "Shop",
+    "link": "/shop"
+  },
+  {
+    "title": "About",
+    "link": "/about"
+  },
+  {
+    "title": "Contact",
+    "link": "/contact"
+  }
+]
